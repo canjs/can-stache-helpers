@@ -3,14 +3,12 @@ var clone = require('steal-clone');
 
 QUnit.module('can-stache-helpers');
 
-QUnit.test('should throw if can-namespace.stache.helpers is already defined', function() {
+QUnit.test('should throw if can-namespace.stacheHelpers is already defined', function() {
 	stop();
 	clone({
 		'can-namespace': {
 			default: {
-				stache: {
-					helpers: {}
-				}
+				stacheHelpers: {}
 			}
 		}
 	})
