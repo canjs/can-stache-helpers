@@ -10,7 +10,7 @@ Helper functions for can-stache
 
 With StealJS, you can import this module directly in a template that is autorendered:
 
-```js
+```javascript
 import plugin from 'can-stache-helpers';
 ```
 
@@ -19,8 +19,8 @@ import plugin from 'can-stache-helpers';
 Use `require` to load `can-stache-helpers` and everything else
 needed to create a template that uses `can-stache-helpers`:
 
-```js
-var plugin = require("can-stache-helpers");
+```javascript
+import plugin from "can-stache-helpers";
 ```
 
 ### Standalone use
