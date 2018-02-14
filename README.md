@@ -11,7 +11,7 @@ Helper functions for can-stache
 With StealJS, you can import this module directly in a template that is autorendered:
 
 ```js
-import plugin from 'can-stache-helpers';
+import plugin from "can-stache-helpers";
 ```
 
 ### CommonJS use
