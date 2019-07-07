@@ -4,7 +4,7 @@ var clone = require('steal-clone');
 QUnit.module('can-stache-helpers');
 
 QUnit.test('should throw if can-namespace.stacheHelpers is already defined', function() {
-	stop();
+	var done = assert.async();
 	clone({
 		'can-namespace': {
 			default: {
@@ -15,11 +15,11 @@ QUnit.test('should throw if can-namespace.stacheHelpers is already defined', fun
 	.import('can-stache-helpers')
 	.then(function() {
 		ok(false, 'should throw');
-		start();
+		done();
 	})
 	.catch(function(err) {
 		var errMsg = err && err.message || err;
 		ok(errMsg.indexOf('can-stache-helpers') >= 0, 'should throw an error about can-stache-helpers');
-		start();
+		done();
 	});
 });
